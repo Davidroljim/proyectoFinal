@@ -62,13 +62,13 @@ Route::put('/comentario/{comentario}', [ComentarioController::class,'update'])->
  //Route::get('/', [ComentarioController::class,'store'])->name('comentarios.store');
  
 Route::post('/catalogoFilter', [EquipoController::class,'indexcarrito'])->name('catalogoFilter');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //Route::put('/miUsuario/{usuario}', [UserController::class,'update'])->name('usuario.update');
 
 //carrito
-Route::get('/carrito/paypal', [CarritoController::class,'comprobacion'])->name('carritos.comprobacion');
+// Route::get('/carrito/paypal', [CarritoController::class,'comprobacion'])->name('carritos.comprobacion');
  Route::get('/carrito/index', [CarritoController::class,'index'])->name('carritos.index');
  Route::get('/carrito/{comp}', [CarritoController::class,'mostrarCarrito'])->name('carritos.mostrarCarrito');
  Route::delete('carrito/{id}', [CarritoController::class,'destroy'])->name('carrito.destroy');
