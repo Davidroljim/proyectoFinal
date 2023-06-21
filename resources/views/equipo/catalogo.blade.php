@@ -304,4 +304,4 @@ function recargar(){
         
     
     @endsection
-</html>
+
