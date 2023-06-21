@@ -1,0 +1,198 @@
+.maincontainer
+{
+    width: 302px;
+    height: 290px;
+    margin: 10px;
+    float: left; 
+}
+
+img
+{
+   border-radius: 20px;
+}
+
+.back h2
+{
+    
+    /* top: 90px; */
+    padding-top: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.back p
+{
+    position: absolute;
+    top: 100px;
+    font-size: 15px;
+}
+.back h4
+{
+    padding-top: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.divboton{
+    padding-top: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.divboton button:hover{
+    color: #1b7cb8;
+    background-color: white!important;
+}
+
+
+.front h2
+{
+    position: absolute;
+    padding: 10px;
+    top: 200px;
+    color: #000;
+}
+
+/* style the maincontainer class with all child div's of class .front */
+.maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .0s linear 0s;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #1b7cb8;
+    color: #fff;
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .0s linear 0s;
+}
+@media only screen and (max-width: 600px) {
+    .maincontainer
+{
+    width: 300px;
+    height: 290px;
+    margin: 15px;
+    margin-left: 30px;
+    float: left; 
+}
+    .maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    margin-left: 18px;
+    width: 300px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .0s linear 0s;
+}
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #1b7cb8;
+    color: #fff;
+    width: 300px;
+    height: 290px;
+    margin-left: 18px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .0s linear 0s;
+}
+  }
+
+
+
+/* Tablet */
+
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+     
+    div> img{
+        width: 200px!important;
+        height: 200px!important;
+    }
+
+    .maincontainer
+{
+    width: 200px;
+    height: 200px;
+    
+    float: left; 
+}
+        .maincontainer > .front
+    {
+        position: absolute;
+        transform: perspective(600px) rotateY(0deg);
+        
+        width: 200px;
+        height: 200px;
+        
+        backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+        transition: transform .0s linear 0s;
+    }
+    .maincontainer > .back
+    {
+        position: absolute;
+        transform: perspective(600px) rotateY(180deg);
+        background: #1b7cb8;
+        color: #fff;
+        width: 200px;
+        height: 200px;
+        
+        backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+        transition: transform .0s linear 0s;
+    }
+
+}
+
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.botonCard{
+    color: #1b7cb8;
+    background-color: white!important;
+}
+
+.botonCard:hover{
+    color: white;
+    background-color: black!important;
+}
+
+.disabled {
+    color: white;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.disabledBoton {
+    
+    cursor: not-allowed;
+    pointer-events: none;
+}

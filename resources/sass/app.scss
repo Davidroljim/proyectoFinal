@@ -1,0 +1,65 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.imagenCarrusel{
+    width: 50%;
+    height: 200px !important;
+}
+
+.ajuste{
+    width: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background:#eee;
+}
+
+.size span {
+  font-size: 11px;
+}
+
+.color span {
+  font-size: 11px;
+}
+
+.product-deta {
+  margin-right: 70px;
+}
+
+.gift-card:focus {
+  box-shadow: none;
+}
+
+.pay-button {
+  color: #fff;
+}
+
+.pay-button:hover {
+  color: #fff;
+}
+
+.pay-button:focus {
+  color: #fff;
+  box-shadow: none;
+}
+
+.text-grey {
+  color: #a39f9f;
+}
+
+.qty i {
+  font-size: 11px;
+}
+
+.fondo{
+    background-color: green;
+}

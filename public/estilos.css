@@ -1,0 +1,121 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ff2d19, #fba086, #5f8cbe, #0e76b8);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ff2d19, #fba086, #5f8cbe, #0e76b8);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+
+ 
+        .contenedor {
+            padding-top: 3.0rem !important;
+            display: flex;
+            justify-content: center;
+          }
+        .ptexto {
+
+            text-align: center;
+            
+            }
+
+            .fondo {
+              
+              background-image: url("/img/DR SOUND DEGRADADO.png");
+              background-size: cover;
+              background-repeat:no-repeat;
+              background-position: center center;
+              text-align: center;
+              
+            }
+            .footer{
+                  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ff4331, #fba086, #5f8cbe, #1b7cb8);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background: linear-gradient(to right, #ff4331, #fba086, #5f8cbe, #1b7cb8);
+            }
+            .barra{
+              /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, #ff4331, #ff4331, #ff4331, #fba086);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #ff4331, #ff4331, #ff4331, #fba086);
+        }
+            
+            .img-container {
+              text-align: center;
+            }
+            
+            
+            .disabledBoton {
+    
+              cursor: not-allowed;
+              pointer-events: none;
+          }
+          
+          .comentario{
+            height:auto;
+                    width:400px;
+                    word-wrap: break-word;
+          }
+          .asunto{
+            height:auto;
+                    width:100px;
+                    word-wrap: break-word;
+          }
+          .formComent{
+            width:108px;
+            height:30px;
+            
+          }
+          @media only screen and (max-width: 600px) {
+
+            .comentario{
+              height:auto;
+                      width:150px;
+                      word-wrap: break-word;
+            }
+            .asunto{
+              height:auto;
+                      width:80px;
+                      word-wrap: break-word;
+            }
+
+          }
+
+          @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .comentario{
+      height:auto;
+              width:240px;
+              word-wrap: break-word;
+    }
+
+    .asunto{
+      height:auto;
+              width:80px;
+              word-wrap: break-word;
+    }
+
+  }
+            
