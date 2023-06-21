@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string("nombre");
             $table->string("caracteristicas");
-            $table->integer("precio");
+            $table->string("precio");
             $table->string("fotos");
-            $table->enum('tipo',['altavoces','iluminacion','estructuras','efectosEspeciales'])->default('altavoces');
+            $table->integer("disponible")->default(0);
             
             $table->timestamps();
         });
