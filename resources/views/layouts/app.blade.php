@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
 
     <!-- Scripts -->
-    {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+     @vite(['resources/sass/app.scss', 'resources/js/app.js']) 
 
     <style>
 
