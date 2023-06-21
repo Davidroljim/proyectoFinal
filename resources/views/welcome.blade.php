@@ -5,16 +5,7 @@
 @endsection
 
 @section('content')
-<style>
-  /* .carousel img {
-    width: 300%;
-    max-height: 960px;
-}
 
-.carousel-inner {
- height: 800px;
-} */
-</style>
     
     @if ($message = Session::get('succes'))
                         <div class="alert alert-danger ">
@@ -196,7 +187,6 @@
   
 </div>
     
-    </body>
+    
     @endsection
     
-</html>
