@@ -111,7 +111,7 @@ class UserController extends Controller
             // echo ("si");
         }
          }
-         
+         var_dump ($bandera);
 
          if ($bandera==1) {
             if (Auth::user()->role=='admin') {
