@@ -105,7 +105,7 @@
                     
                 </div>
                 <div id=""><a href="{{route('carritos.comprobacion')}}" class="btn  " style="width: 300px; font-size: 21px;margin-bottom: 15px; color: white;
-                    background-color: #1b7cb8;">Seleccionar Método de pago</a></div>
+                    background-color: #1b7cb8;">Métodos de pago</a></div>
                      
                     
                 </div>

@@ -231,11 +231,11 @@
                         @endAuth
                         <div class="mb-3">
                          <label for="recipient-name" class="col-form-label">Asunto:</label>
-                          <input maxlength="20" type="text" class="form-control" id="recipient-name" name="asunto" placeholder="asunto">
+                          <input maxlength="50" type="text" class="form-control" id="recipient-name" name="asunto" placeholder="asunto">
                         </div>
                         <div class="mb-3">
                           <label for="message-text" class="col-form-label">Descripcion:</label>
-                          <textarea maxlength="200" class="form-control" id="message-text" style="height: 191px;" name="descripcion"></textarea>
+                          <textarea maxlength="150" class="form-control" id="message-text" style="height: 191px;" name="descripcion"></textarea>
                         </div>
                       
                     </div>

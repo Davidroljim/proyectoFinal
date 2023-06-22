@@ -30,7 +30,7 @@
                           <tr>
                             <th>Foto</th>
                               <th>Nombre equipo</th>
-                              <th>Precio</th>
+                              <th>Precio / Día</th>
                               <th>F Inicio</th>
                               <th>F Fin</th>  
                           </tr>

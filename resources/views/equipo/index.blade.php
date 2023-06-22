@@ -8,7 +8,7 @@
 <div class="container">
     @if ($message = Session::get('success'))
                         <div class="alert alert-success">
-                            <p>{{ $message }}</p>
+                            <p style="text-align: center">{{ $message }}</p>
                         </div>
                     @endif
     <h1 class="mb-5" style="text-align: center;">Equipos</h1>

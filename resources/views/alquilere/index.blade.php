@@ -33,10 +33,10 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+                                        <th>Foto</th>
 										<th>Id Usuario</th>
 										<th>Id Equipo</th>
-                                        <th>Precio</th>
+                                        <th>Precio / Día</th>
 										<th>F Inicio</th>
 										<th>F Fin</th>
 
@@ -47,7 +47,8 @@
                                     @foreach ($alquileres as $alquilere)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+                                            <td><img class="bd-placeholder-img" width="40%" height="40%" src="{{ $alquilere->equipo["fotos"] }}" aria-hidden="true"
+                                                focusable="false" style="object-fit: cover;"></td>
 											<td>{{ $alquilere->id_usuario }}</td>
 											<td>{{ $alquilere->id_equipo }}</td>
                                             <td>{{ $alquilere->stock }}</td>

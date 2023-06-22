@@ -160,11 +160,11 @@
                         
                         <div class="mb-3">
                            <label for="recipient-name" class="col-form-label">Asunto:</label>
-                          <input type="text" class="form-control" id="recipient-name" name="asunto" placeholder="asunto">
+                          <input maxlength="50" type="text" class="form-control" id="recipient-name" name="asunto" placeholder="asunto">
                         </div>
                         <div class="mb-3">
-                          <label maxlength="20" for="message-text" class="col-form-label">Descripcion:</label>
-                          <textarea maxlength="30" class="comentario form-control" id="message-text" style="height: 191px;" name="descripcion"></textarea>
+                          <label  for="message-text" class="col-form-label">Descripcion:</label>
+                          <textarea maxlength="150" class="comentario form-control" id="message-text" style="height: 191px;" name="descripcion"></textarea>
                         </div>
                       
                     </div>
