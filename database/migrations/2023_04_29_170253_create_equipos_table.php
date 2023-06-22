@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('equipos', function (Blueprint $table) {
             $table->id();
             $table->string("nombre");
-            $table->string("caracteristicas",250);
+            $table->string("caracteristicas");
             $table->string("precio");
             $table->string("fotos");
             $table->integer("disponible")->default(0);
