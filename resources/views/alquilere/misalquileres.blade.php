@@ -12,7 +12,7 @@
         @if($alquileres->isEmpty())
           
         <h2 style="text-align: center">No tienes ningún alquiler</h2>
-        <h1 class="mb-5" style="text-align: center">Alquileres</h1>
+        
         
         
             <h1 style="text-align: center">Parece que aún no alquilaste nada</h1>
