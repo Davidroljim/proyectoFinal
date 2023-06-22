@@ -168,7 +168,7 @@ class CarritoController extends Controller
         }else{
             $comp=0;
         return redirect()->route('carritos.mostrarCarrito','comp')
-            ->with('success', 'Ya tienes este mismo producto en el carrito');
+            ->with('error', 'El rango de fechas del alquiler coincide con un producto de tu carrito');
         }
 
         

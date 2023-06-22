@@ -22,11 +22,11 @@
                 @else
                 @if ($message = Session::get('error'))
                             <div class="alert alert-danger">
-                                <p>{{ $message }}</p>
+                                <p style="text-align: center">{{ $message }}</p>
                             </div>
                 @elseif($message = Session::get('success'))
                             <div class="alert alert-success">
-                                <p>{{ $message }}</p>
+                                <p style="text-align: center">{{ $message }}</p>
                             </div>
                 @endif
                 <h1 class="mb-5">CARRITO</h1>

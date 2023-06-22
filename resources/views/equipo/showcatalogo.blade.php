@@ -18,7 +18,7 @@
         <div class="row" style=" width: 95%">
 
             <div style="text-align: center; padding: 0px!important" class="col-6">
-                <img style=" width: 70%" src="{{ $equipo->fotos }}">
+                <img style=" width: 70%; border-radius: 20px;" src="{{ $equipo->fotos }}">
             </div>
 
 
@@ -77,6 +77,34 @@
                             @endAuth
                            
                         </div>
+                        <div id="block-reassurance">
+                            
+                                      
+                                  <div >
+                                    <img class="img-responsive ls-is-cached lazyloaded" data-src="https://sonicolor.es/modules/blockreassurance/img/reassurance-1-1.png" alt="Entrega en 24 horas" src="https://sonicolor.es/modules/blockreassurance/img/reassurance-1-1.png">
+                                    <span class="h6">Entrega en 24 horas</span>
+                                  </div>
+                                
+                                      
+                                  <div >
+                                    <img class="img-responsive ls-is-cached lazyloaded" data-src="https://sonicolor.es/modules/blockreassurance/img/reassurance-2-1.png" alt="14 días devolución" src="https://sonicolor.es/modules/blockreassurance/img/reassurance-2-1.png">
+                                    <span class="h6">Devolución por Fallos</span>
+                                  </div>
+                                
+                                      
+                                  <div >
+                                    <img class="img-responsive ls-is-cached lazyloaded" data-src="https://sonicolor.es/modules/blockreassurance/img/reassurance-3-1.png" alt="Pago seguro" src="https://sonicolor.es/modules/blockreassurance/img/reassurance-3-1.png">
+                                    <span class="h6">Pago seguro</span>
+                                  </div>
+                                
+                                      
+                                  <div >
+                                    <img class="img-responsive ls-is-cached lazyloaded" data-src="https://sonicolor.es/modules/blockreassurance/img/reassurance-4-1.png" alt="Garantía 3 años" src="https://sonicolor.es/modules/blockreassurance/img/reassurance-4-1.png">
+                                    <span class="h6">Garantía de productos</span>
+                                  </div>
+                                
+                                  
+                          </div>
                     </div>
 
                 </form>

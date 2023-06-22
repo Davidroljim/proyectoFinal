@@ -40,15 +40,18 @@
 
 .maincontainer
 {
+    
     width: 302px;
     height: 290px;
-    margin: 10px;
+    margin: 15px;
     float: left; 
 }
 
+
+
 img
 {
-   border-radius: 20px;
+   border-radius: 0px;
 }
 
 .back h2
@@ -741,9 +744,7 @@ img
                 <li class="nav-item w-100">
                     <a class="nav-link" href="{{route('comentario.miscomentarios', Auth::user()->id)}}">Mis Comentarios</a>
                 </li>
-                <li class="nav-item w-100">
-                    <a class="nav-link" href="{{route('catalogo')}}">Catalogo</a>
-                </li>
+                
                 <li class="nav-item w-100">
                     <a class="nav-link" href="{{route('carritos.misAlquileres')}}">Mis Alquileres</a>
                 </li>

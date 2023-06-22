@@ -62,7 +62,94 @@
         </div>
     </div>
 </div> --}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+   const btncompra = document.getElementById('boton');
+   btncompra.disabled = true;
+  });
 
+$(document).ready(function(){
+  const btncompra = document.getElementById('boton');
+  const prueba =0;
+
+
+  $("#password").blur(function(){
+    var password1 = document.getElementById('password_confirmation');
+    var passformat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const $resultp = $('#resultp');
+if(password.value.match(passformat))
+{
+    $resultp.text('');
+  if (password.value.match(passformat)&&password1.value==password.value) {
+  btncompra.disabled = false;
+}else{
+  btncompra.disabled = true;
+}
+
+    if (prueba==1) {
+      prueba=1;
+    }
+//document.form1.text2.focus();
+return true;
+}
+else
+{
+  if (password.value.match(passformat)&&email.value.match(mailformat)&&nombre.value.length>1&&password1.value==password.value) {
+  btncompra.disabled = false;
+}else{
+  btncompra.disabled = true;
+}
+  
+    $resultp.text('Contraseña no valida, necesitas una mayuscula un número y 8 caracteres.');
+    $resultp.css('color', 'red');
+//document.form1.text2.focus();
+return false;
+}
+
+  });
+
+
+  $("#password_confirmation").blur(function(){
+    var password1 = document.getElementById('password_confirmation');
+    var passformat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const $textcontraseña1 = $('#textcontraseña1');
+if(password1.value==password.value)
+{
+    $textcontraseña1.text('');
+  if (password.value.match(passformat)&&password1.value==password.value) {
+  btncompra.disabled = false;
+}else{
+  btncompra.disabled = true;
+}
+
+    if (prueba==1) {
+      prueba=1;
+    }
+//document.form1.text2.focus();
+return true;
+}
+else
+{
+    $textcontraseña1.text('No coincide con la anterior contraseña');
+    $textcontraseña1.css('color', 'red');
+  if (password.value.match(passformat)&&password1.value==password.value) {
+  btncompra.disabled = false;
+}else{
+  btncompra.disabled = true;
+}
+  
+    
+//document.form1.text2.focus();
+return false;
+}
+
+  });
+
+
+  });</script>
 
 
 <section class="h-100 gradient-form" style="background-color: #eee;">
@@ -77,7 +164,7 @@
                   <div class="text-center">
                     <img src="{{ URL::to('/img/DRSOUNDTRANS1.png') }}"
                       style="width: 185px;" alt="logo">
-                    <h4 class="mt-1 mb-5 pb-1">Somos el equido Doble R Sound</h4>
+                    <h4 class="mt-1 mb-5 pb-1">Somos el equipo Doble R Sound</h4>
                   </div>
   
                   <form method="POST" action="{{ route('password.update') }}">
@@ -105,11 +192,11 @@
                         <div class="col-md-6">
                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                             <p id="resultp"></p>
-                            {{-- @error('password')
+                             {{-- @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
-                            @enderror --}}
+                            @enderror  --}}
                         </div>
                     </div>
 
@@ -117,7 +204,7 @@
                         <label for="" class="col-md-4 col-form-label text-md-end">{{ __('Confirmar Contraseña') }}</label>
 
                         <div class="col-md-6">
-                            <input id="" type="password" class="form-control passwordconfirm" name="password_confirmation" required autocomplete="new-password">
+                            <input id="password_confirmation" type="password" class="form-control passwordconfirm" name="password_confirmation" required autocomplete="new-password">
                             <p id="textcontraseña1"></p>
                         </div>
                     </div>

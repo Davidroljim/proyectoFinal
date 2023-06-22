@@ -159,10 +159,10 @@ class ComentarioController extends Controller
 
         if (Auth::user()->role=='admin') {
             return redirect()->route('comentarios.index')
-            ->with('success', 'Comentario editado correctamente');
+            ->with('success', 'Comentario borrado correctamente');
         }else{
             return redirect()->route('comentario.miscomentarios', Auth::user()->id )
-            ->with('success', 'Comentario editado correctamente');
+            ->with('success', 'Comentario borrado correctamente');
         }
 
         

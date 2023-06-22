@@ -155,7 +155,7 @@ function recargar(){
                       @endforeach
 
                           @if($bandera==false)
-                          <div class="col">
+                          <div class="col" style="align-items: center!important; display: flex!important; justify-content: center!important;">
                             {{-- <div class="card text-center shadow-sm">
 
                               <img  src="{{ $equipo->fotos }}" class="bd-placeholder-img card-img-top" width="100%" height="300" role="img" alt="...">
@@ -169,7 +169,7 @@ function recargar(){
                                   <input type="hidden" name="id_equipo" value={{$equipo->id}}>
                                   <button type="submit" style="background-color:white;border:none;color: red;font-weight: 700;text-decoration: none;font-size: 20px"><i class="fa fa-fw fa-trash"></i> Añadir al Carrito</button>
                                 </form> --}}
-                                <div class="maincontainer">
+                                <div class="maincontainer contenedor">
                               
                                   <div class="back" style="border-radius: 5px;">
                                     
@@ -247,7 +247,7 @@ function recargar(){
                 </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         @foreach ($equipos as $equipo)
-                         <div class="col">
+                         <div class="col" style="align-items: center!important; display: flex!important; justify-content: center!important;">
                           {{-- <div class="card text-center shadow-sm">
 
                             <img  src="{{ $equipo->fotos }}" class="bd-placeholder-img card-img-top" width="100%" height="300" role="img" alt="...">
@@ -263,7 +263,7 @@ function recargar(){
                           
                           
                             
-                            <div class="maincontainer">
+                            <div class="maincontainer contenedor">
                               
                                 <div class="back" style="border-radius: 5px;">
                                   <a class="disabled" href="{{ route('carrito.crear',$equipo->id) }}" >
